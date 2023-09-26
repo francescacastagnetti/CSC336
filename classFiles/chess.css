@@ -1,0 +1,44 @@
+body{
+    background-color: #aeb2fc;
+}
+
+table{
+    border: 1px solid;
+    width:650px; height: 650px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+th{
+    width:75px; 
+    height: 75px;
+    border: 1px solid;
+}
+
+td{
+    border: 1px solid;
+}
+
+.filled {
+    background-color:#7258c3;
+}
+
+.pawn {
+    display:block; 
+    width: 90%; 
+    height: 70%;
+}
+
+.rook, .knight, .bishop, .queen {
+    display:block; 
+    width: 100%; 
+    height: 90%;
+}
+
+
+.king {
+    display:block; 
+    width: 100%; 
+    height: 110%;
+}
