@@ -49,10 +49,14 @@ dd {
 }
 
 #banner {
+    margin-top: -10px;
+    margin-left: -10px;
     width: 100%;
-    position:relative; 
     background-image: url(TMNTimages/rancidbannerbg.png);
     background-position: center;
+    position: fixed;
+    z-index: 999;
+
 }  
 
 #bannerimg {
@@ -131,8 +135,11 @@ dd {
 }
 
 #validators{
-    position: absolute;
     right: 0px;
+    bottom: 0px;
+    position: fixed;
+    z-index: 998;
+    opacity: 0.75;
     }
 
 .roundborders {
