@@ -4,7 +4,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-span {
+.percent{
     position:absolute;
     top: 10px;
     left: 105px;
@@ -59,7 +59,7 @@ dd {
 
 }  
 
-#bannerimg {
+#banner img {
     display:block;
     margin-left: auto;
     margin-right: auto;
@@ -157,6 +157,10 @@ dd {
     margin-bottom: 10pt;
 
     
+}
+
+.ital{
+    font-style:italic ;
 }
 
 .wraptext {
