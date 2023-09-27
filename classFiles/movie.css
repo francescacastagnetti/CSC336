@@ -1,3 +1,158 @@
 body{
-    background-color: green;
+    background-image:url(TMNTimages/moviebg.png);
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    position:absolute;
+    top: 10px;
+    left: 105px;
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    height: 83px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1{
+    position: relative;
+}
+
+dl {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 10pt;
+
+}
+
+#linkdt{
+    line-height: 0%;
+}
+
+#linkdd{
+    margin-left: 0;
+    padding-bottom: 0;
+}
+
+#linkul {
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+#banner {
+    width: 100%;
+    position:relative; 
+    background-image: url(TMNTimages/rancidbannerbg.png);
+    background-position: center;
+}  
+
+#bannerimg {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#maingheading{
+    text-align: center;
+    font-size: 24pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 3px 3px #999999;
+
+}
+
+#mainbody {
+    width: 800px;
+    height: 1090px;
+    background-color: #EEEEEE;
+    border-radius: 20px 20px 20px 20px; /* <----- use this to round all corners in div */
+    margin: auto;
+    box-shadow: 5px 5px 5px gray;
+    position: relative;
+}
+
+#rottenrating{
+    position:absolute;
+    top:0;
+    left:0;
+    background-image: url(TMNTimages/rottenlargebg.png);
+    width: 550px;
+    height: 83px;
+    border-radius: 20px 0px 0px 0px;
+} 
+
+#numreviews {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #A2B964;
+    border-radius: 0px 0px 0px 20px;
+    text-align: center;
+}
+
+
+#cols {
+    display:flex;
+    position:relative;
+    top: 83px;
+    background-color: #EEEEEE;
+    width: 533px;
+    column-count: 2;
+    column-gap: 2%;
+    column-width: 47px;
+    padding: 8px;
+    margin: 0;
+}
+
+#generaloverview {
+    background-color: #A2B964;
+    width: 250px;
+    position: absolute;
+    top: 390px;
+    left: 550px;
+}
+
+#goimg {
+    position: absolute;
+    top:0px;
+    left: 550px;
+    border-radius: 0px 20px 0px 0px;
+}
+
+#validators{
+    position: absolute;
+    right: 0px;
+    }
+
+.roundborders {
+    border-radius: 20px 20px 20px 20px;
+}
+
+.qreviews {
+    border-radius: 20px 20px 20px 20px;    
+    background-color: #FFFFFF;
+    padding: 8px;
+    border: 2px solid #CCCCCC;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10pt;
+    overflow: auto;
+    margin-bottom: 10pt;
+
+    
+}
+
+.wraptext {
+    float: left;
+    margin: 5px;
 }
