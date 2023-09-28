@@ -1,25 +1,39 @@
+/* setting font for entire page */
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Formating for my bullets so page is easier to read */
+li {
+    line-height: 140%;
 }
 
 p {
     line-height: 70%;
 }
 
+/* Alignment so my name is centered */
 h1 {
     text-align: center;
 }
 
+/* Formatting so all of my categories looks the same and have upper and lower borders to clearly isolate them. */
 h2 {
     font-weight: lighter;
     text-align: center;
+    border-top:1px solid black;
     border-bottom: 1px solid black;
     width: 100%;
     display: block;
 
 }
 
+/* Creating bold style to use throughout paragraphs */
+span {
+    font-weight: bold;
+}
 
+/* Adjusting the horizonatl rule characteristics to fit my webpage better */
 hr{
     height: 1px;
     background-color: black;
@@ -27,21 +41,25 @@ hr{
     padding-top: 0;
 }
 
-span {
-    font-weight: bold;
-}
 
 #thick {
     height: 3px;
     background-color: black;
 }
 
+
+/* Adding specficic formatting so that each category looks unique and polished */
 #pinfo {
     text-align: center;
     padding-bottom: 20px;
 }
 
 #profsum {
-    line-height: normal;
+    line-height: 150%;
     text-align:justify;
+}
+
+#skillscol {
+    column-count: 2;
+    line-height: 150%;
 }

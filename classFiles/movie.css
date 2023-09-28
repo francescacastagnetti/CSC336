@@ -1,9 +1,11 @@
+/* Sets background color and font */
 body{
     background-image:url(TMNTimages/moviebg.png);
     font-size: 10pt;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Styles the movie rating so it matches requirements */
 .percent{
     position:absolute;
     top: 10px;
@@ -16,10 +18,8 @@ body{
     vertical-align: middle;
 }
 
-h1{
-    position: relative;
-}
-
+/* Sets the elements of dictionary list to match rubric styles, 
+applies to the general info section */
 dl {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -34,6 +34,7 @@ dd {
 
 }
 
+/* Removes indentations and bullets from link list */
 #linkdt{
     line-height: 0%;
 }
@@ -48,6 +49,8 @@ dd {
     padding-left: 0%;
 }
 
+
+/* Formatiing the upper banner to be centered, stretch the entire page, and be fixed at the top of the screen (extra credit +2%) */
 #banner {
     margin-top: -10px;
     margin-left: -10px;
@@ -66,6 +69,7 @@ dd {
 
 }
 
+/* Styles the main heading of the page */
 #maingheading{
     text-align: center;
     font-size: 24pt;
@@ -74,6 +78,9 @@ dd {
 
 }
 
+/* Overall formatting for rounded rectangular section, 
+allows for all nested elements to be fitted correctly and 
+achieve the overall look for the page */
 #mainbody {
     width: 800px;
     height: 1090px;
@@ -84,6 +91,7 @@ dd {
     position: relative;
 }
 
+/* Formats the signature rotten rating bar at the top of the main div of the page */
 #rottenrating{
     position:absolute;
     top:0;
@@ -94,6 +102,7 @@ dd {
     border-radius: 20px 0px 0px 0px;
 } 
 
+/* Sets the color and position of the currently viewing reviews section */
 #numreviews {
     position: absolute;
     bottom: 0;
@@ -106,6 +115,7 @@ dd {
 }
 
 
+/* Formats and styles the columsn of reviews  */
 #cols {
     display:flex;
     position:relative;
@@ -119,6 +129,7 @@ dd {
     margin: 0;
 }
 
+/* Sets up the positioning, color, and style of the general overview info */
 #generaloverview {
     background-color: #A2B964;
     width: 250px;
@@ -127,6 +138,8 @@ dd {
     left: 550px;
 }
 
+
+/* Positions and curves the edge of the general overview image */
 #goimg {
     position: absolute;
     top:0px;
@@ -134,6 +147,7 @@ dd {
     border-radius: 0px 20px 0px 0px;
 }
 
+/* Moves validators to their correct positioning, and fixes them and makes they semi-transparent for extra credit (+4%) */
 #validators{
     right: 0px;
     bottom: 0px;
@@ -142,10 +156,12 @@ dd {
     opacity: 0.75;
     }
 
+/* Class for rounded boarded to avoid redunancy since the main section have rounded borders the nest elements would need to fit in */
 .roundborders {
     border-radius: 20px 20px 20px 20px;
 }
 
+/* Positions and properly styles the quotes for reviews */
 .qreviews {
     border-radius: 20px 20px 20px 20px;    
     background-color: #FFFFFF;
@@ -159,10 +175,13 @@ dd {
     
 }
 
+/* Class for italics to avoid the <i> tag in the main html file */
 .ital{
     font-style:italic ;
 }
 
+
+/* Class to help the images directly to the side of the quote reviews sit nicely next to the quotes themselves. */
 .wraptext {
     float: left;
     margin: 5px;
