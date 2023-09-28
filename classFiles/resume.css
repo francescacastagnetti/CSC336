@@ -2,6 +2,10 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+p {
+    line-height: 70%;
+}
+
 h1 {
     text-align: center;
 }
@@ -23,6 +27,9 @@ hr{
     padding-top: 0;
 }
 
+span {
+    font-weight: bold;
+}
 
 #thick {
     height: 3px;
@@ -34,6 +41,7 @@ hr{
     padding-bottom: 20px;
 }
 
-#span {
-    font-weight: bold;
+#profsum {
+    line-height: normal;
+    text-align:justify;
 }
