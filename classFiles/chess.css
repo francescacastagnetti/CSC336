@@ -1,7 +1,10 @@
+/* Sets background color of page so I only have to spend time blocking out one color on the chess board 
+rather than two */
 body{
     background-color: #aeb2fc;
 }
 
+/* Table formatting and positioning in the center of the page */
 table{
     border: 1px solid;
     width:650px; height: 650px;
@@ -9,34 +12,40 @@ table{
     margin-right:auto;
 }
 
-
+/* Sets the size and border of table headings */
 th{
     width:75px; 
     height: 75px;
     border: 1px solid;
 }
 
+/* Sets borders to each cell of table data */
 td{
     border: 1px solid;
 }
 
+/* Colors in the darkers squares on the board */
 .filled {
     background-color:#7258c3;
 }
 
+/* Positions and styles the pawn image 
+(required different sizing than other pieces) */
 .pawn {
     display:block; 
     width: 90%; 
     height: 70%;
 }
 
+/* Positions and styles the piece images that have the same sizing requirements */
 .rook, .knight, .bishop, .queen {
     display:block; 
     width: 100%; 
     height: 90%;
 }
 
-
+/* Positions and styles the pawn image 
+(required different sizing than other pieces) */
 .king {
     display:block; 
     width: 100%; 
