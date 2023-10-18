@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Journal</title>
+</head>
+<body>
+    <h1>My Journal</h1>
+
+    <!-- Journal Entry Form -->
+    <form id="journal-form">
+        <label for="entry-title">Title:</label>
+        <input type="text" id="entry-title" name="entry-title" required><br>
+
+        <label for="entry-text">Journal Entry:</label>
+        <textarea id="entry-text" name="entry-text" rows="4" required></textarea><br>
+
+        <label for="entry-image-url">Image URL:</label>
+        <input type="text" id="entry-image-url" name="entry-image-url"><br>
+
+        <button type="submit">Add Entry</button>
+    </form>
+
+    <!-- Display Journal Entries Here -->
+    <div id="journal-entries">
+        <!-- You can display existing journal entries here -->
+    </div>
+
+    <script>
+        // JavaScript code to handle form submission and display entries
+        document.getElementById("journal-form").addEventListener("submit", function (event) {
+            
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Get input values
+            var title = document.getElementById("entry-title").value;
+            var text = document.getElementById("entry-text").value;
+            var imageUrl = document.getElementById("entry-image-url").value;
+
+            // Create a new entry element and display it
+            var entry = document.createElement("div");
+            entry.innerHTML = "<h2>" + title + "</h2><p>" + text + "</p>";
+
+            // If an image URL is provided, display the image
+            if (imageUrl) {
+                entry.innerHTML += "<img src='" + imageUrl + "' alt='" + title + "'>";
+            }
+
+            // Append the entry to the journal-entries section
+            document.getElementById("journal-entries").appendChild(entry);
+
+            // Clear the form fields for the next entry
+            document.getElementById("entry-title").value = "";
+            document.getElementById("entry-text").value = "";
+            document.getElementById("entry-image-url").value = "";
+        });
+    </script>
+</body>
+</html>

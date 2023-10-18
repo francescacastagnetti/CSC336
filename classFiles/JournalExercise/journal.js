@@ -1,3 +1,33 @@
+// window.onload=function(){      
+//       document.getElementById("journal-form").addEventListener("submit", function (event) {
+            
+//             event.preventDefault(); // Prevent the default form submission behavior
+
+//             // Get input values
+//             var title = document.getElementById("entry-title").value;
+//             var text = document.getElementById("entry-text").value;
+//             var imageUrl = document.getElementById("entry-image-url").value;
+
+//             // Create a new entry element and display it
+//             var entry = document.createElement("div");
+//             entry.innerHTML = "<h2>" + title + "</h2><p>" + text + "</p>";
+
+//             // If an image URL is provided, display the image
+//             if (imageUrl) {
+//                 entry.innerHTML += "<img src='" + imageUrl + "' alt='" + title + "'>";
+//             }
+
+//             // Append the entry to the journal-entries section
+//             document.getElementById("journal-entries").appendChild(entry);
+
+//             // Clear the form fields for the next entry
+//             document.getElementById("entry-title").value = "";
+//             document.getElementById("entry-text").value = "";
+//             document.getElementById("entry-image-url").value = "";
+//       });
+// }
+
+
 String.prototype.isEmpty = function(){
       return (this.length === 0 || !this.trim());
 };
@@ -22,6 +52,17 @@ var getEntry = function(){
       return value;
 };
 
+
+// var getURL = function() {
+//       var imageUrl = document.getElementById("URL").value;
+//       if (imageUrl) {
+//             entry.innerHTML += "<img src='" + imageUrl + "' alt='" + title + "'>";
+//       }
+//       return imageUrl;
+// }
+
+
+
 var clearDiv = function(){
     document.getElementById("content").value = "";
 }
@@ -29,7 +70,9 @@ var clearDiv = function(){
 
 var isEmpty = function(entry){
       entry = getEntry();
+      // imgEntry = getURL();
       var output = document.getElementById("content").value;
+      // var IMGoutput = document.getElementById("URL").value;
       if ( output == '' ){
                 alert("Enter a message");
       }
@@ -49,5 +92,5 @@ addAnotherJournal = function() {
   }
   
 
-// updateEntry();
+updateEntry();
 

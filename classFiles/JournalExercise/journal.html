@@ -1,12 +1,14 @@
 <html>
 <head>
     <title></title>
+    <meta charset="utf-8">
 
 
 <link rel="stylesheet" type="text/css" href="journal.css">
+<script src="journal.js" type="text/javascript"></script>
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-<script>
+<!-- <script>
       String.prototype.isEmpty = function(){
       return (this.length === 0 || !this.trim());
 };
@@ -49,24 +51,20 @@ var isEmpty = function(entry){
 
 
 
-</script>
+</script> -->
 </head>
 <body>
 
-    <!-- <div id = "journal">
+    <div id = "journal">
           <div class = "photo">
                 <img src = "http://placehold.it/140x100" id = "userImage">
+                <!-- <textarea id = "URL" cols = "64" rows = "3" placeholder = "Add an image URL to elevate your journal post."></textarea> -->
                 <button id = "upload">Upload</button>
           </div>
           <div class = "comments">
                 <textarea id = "content" cols = "64" rows = "3" placeholder = "Say something about yourself."></textarea>
                 <button id = "submit" onclick = "isEmpty();clearDiv();">Submit</button>
           </div>
-    </div>
-
-    <div id="info">
-      <h3>S+A thing</h3>
-      <h4>More things</h4>
     </div>
 
     <div id = "entries">
@@ -78,22 +76,25 @@ var isEmpty = function(entry){
               </li>
             </div>
           </ul>
-    </div> -->
+    </div>
 
-    <div>
-      <h1>Victoria's Journal</h1>
-      <h3>So fresh and so clean</h3>
-      <div>
+    <!-- <div class="entireJournal">
+      <div class="title">      
+            <h1>Victoria's Journal</h1>
+            <h3 class="titleDescription">So fresh and so clean</h3>
+      </div>
+      <div class="entry">
             <h3><span>10/06/2023: </span>Spatulas</h3>
+            <img src="jImages/spatula.jpg" alt="spatula">
             <p>Yesterday I went to the store and got some much needed spatulas! (What better way to say I love myself than to buy myself a spatula!)</p>
       </div>
-      <div>            
+      <div class="entry">            
             <h3><span>10/06/2023: </span>Cookie Monster Cupcakes</h3>
-            <img src='' alt= 'Cookie Monster Cupcakes Image'>
+            <img src="jImages/cookieMon.jpg" alt="Cookie Monster Cupcakes Image">
             <p>My favorite cartoon character is Cookie Monster, and my favorite dessert is cupcakes, so Cookie Monster cupcakes are the best of both worlds.</p>
-            <p>Did you know? Cookie Monster onces said, "Sometimes me think what is love, and then me think love is what last cookie is for. Me give up the last cookie for you." I wonder if the same applies for cupcakes? (If so, I dont think I can ever love ANYONE!)"</p>
+            <p>Did you know? Cookie Monster once said, "Sometimes me think what is love, and then me think love is what last cookie is for. Me give up the last cookie for you." I wonder if the same applies for cupcakes? (If so, I dont think I can ever love ANYONE!)"</p>
       </div>
-     </div> 
+     </div>  -->
 
 </body>
 </html>
