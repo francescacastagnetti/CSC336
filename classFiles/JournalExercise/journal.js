@@ -52,7 +52,7 @@ function addJournalEntry(){
             return;
       }
 
-      
+      journalEntries = "\n <h2><span>${dateString}:</span> ${title}</h2> <div class='entireJournal'><img src='${newEntryPhoto}'>${newEntryContent}</div>";
 
 }
 
