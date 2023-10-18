@@ -1,7 +1,7 @@
 body{
   width: 100%;
   margin: 0 auto;
-  background-color:#8fb2ea;
+  background-color:#c9ffff;
   font-family: 'Montserrat', sans-serif;
   /* color:#FFF; */
   overflow-x: hidden;
@@ -31,9 +31,15 @@ body{
     color:#19a0a0;
 }
 
-.title {
+
+.header{
     background-color: #A8F0F0;
     text-align: right;
+    border-style: solid;
+    border-color: #19a0a0;
+    border-width: 5px;
+    border-radius: 1px;
+
 }
 
 .entry {

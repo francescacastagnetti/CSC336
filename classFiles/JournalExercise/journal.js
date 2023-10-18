@@ -28,29 +28,60 @@
 // }
 
 
-String.prototype.isEmpty = function(){
-      return (this.length === 0 || !this.trim());
-};
+var clearEntryForm = function(){
+      document.getElementById("entryPhoto").value = "";
+      document.getElementById("entryContent").value = "";
+      document.getElementById("entryContent").value = "";
 
-var guestMessages = {
-      msgs: [],
+}
 
-      getMessages: function(msg){
-          this.msgs.push("User: " + value + "<br />");
+function clearJournalEntries(){
+      document.getElementById("entries").innerHTML = "";
+}
 
-      },
+function addJournalEntry(){
+      let date = new Date();
+      let dateString = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
+      let title = document.getElementById("title").value;
+      let newEntryPhoto = document.getElementById("entryPhoto").value;
+      let newEntryContent = document.getElementById("entryContent").value;
+      let journalEntries = document.getElementById("entries").innerHTML;
 
-      printMessages: function(){
-          guestMessages.getMessages();
-          var showEntry = document.getElementById("first-entry").innerHTML = this.msgs;
-
+      if(newEntryContent == ''){
+            alert("Error: cannot add an empty journal entry! \n\nPlease enter a message.");
+            return;
       }
-};
 
-var getEntry = function(){
-      value = document.getElementById("content").value;
-      return value;
-};
+      
+
+}
+
+
+
+
+// String.prototype.isEmpty = function(){
+//       return (this.length === 0 || !this.trim());
+// };
+
+// var guestMessages = {
+//       msgs: [],
+
+//       getMessages: function(msg){
+//           this.msgs.push("User: " + value + "<br />");
+
+//       },
+
+//       printMessages: function(){
+//           guestMessages.getMessages();
+//           var showEntry = document.getElementById("first-entry").innerHTML = this.msgs;
+
+//       }
+// };
+
+// var getEntry = function(){
+//       value = document.getElementById("content").value;
+//       return value;
+// };
 
 
 // var getURL = function() {
@@ -62,35 +93,34 @@ var getEntry = function(){
 // }
 
 
-
-var clearDiv = function(){
-    document.getElementById("content").value = "";
-}
-
-
-var isEmpty = function(entry){
-      entry = getEntry();
-      // imgEntry = getURL();
-      var output = document.getElementById("content").value;
-      // var IMGoutput = document.getElementById("URL").value;
-      if ( output == '' ){
-                alert("Enter a message");
-      }
-       else {
-        guestMessages.printMessages();
-      }
-}
+// var clearDiv = function(){
+//     document.getElementById("content").value = "";
+// }
 
 
-addAnotherJournal = function() {
-      var ul = document.getElementById("list");
-      var li = document.createElement("li");
-      var children = ul.children.length + 1
-      li.setAttribute("id", "element"+children)
-      li.appendChild(document.createTextNode("Element "+children));
-      ul.appendChild(li)
-  }
+// var isEmpty = function(entry){
+//       entry = getEntry();
+//       // imgEntry = getURL();
+//       var output = document.getElementById("content").value;
+//       // var IMGoutput = document.getElementById("URL").value;
+//       if ( output == '' ){
+//                 alert("Enter a message");
+//       }
+//        else {
+//         guestMessages.printMessages();
+//       }
+// }
+
+
+// addAnotherJournal = function() {
+//       var ul = document.getElementById("list");
+//       var li = document.createElement("li");
+//       var children = ul.children.length + 1
+//       li.setAttribute("id", "element"+children)
+//       li.appendChild(document.createTextNode("Element "+children));
+//       ul.appendChild(li)
+//   }
   
 
-updateEntry();
+// updateEntry();
 
