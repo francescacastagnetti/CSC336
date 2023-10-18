@@ -39,7 +39,15 @@ var isEmpty = function(entry){
 }
 
 
-
+addAnotherJournal = function() {
+      var ul = document.getElementById("list");
+      var li = document.createElement("li");
+      var children = ul.children.length + 1
+      li.setAttribute("id", "element"+children)
+      li.appendChild(document.createTextNode("Element "+children));
+      ul.appendChild(li)
+  }
+  
 
 // updateEntry();
 
