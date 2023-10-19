@@ -1,78 +1,40 @@
-<html>
+<!DOCTYPE html>
+<html lang = "en">
 <head>
-    <title></title>
+    <title>Francesca's Journal</title>
     <meta charset="utf-8">
 
 
 <link rel="stylesheet" type="text/css" href="journal.css">
-<script src="journal.js" type="text/javascript"></script>
+<script src="journal.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-<!-- <script>
-      String.prototype.isEmpty = function(){
-      return (this.length === 0 || !this.trim());
-};
 
-var guestMessages = {
-      msgs: [],
-
-      getMessages: function(msg){
-          this.msgs.push("User: " + value + "<br />");
-
-      },
-
-      printMessages: function(){
-          guestMessages.getMessages();
-          var showEntry = document.getElementById("first-entry").innerHTML = this.msgs;
-
-      }
-};
-
-var getEntry = function(){
-      value = document.getElementById("content").value;
-      return value;
-};
-
-var clearDiv = function(){
-    document.getElementById("content").value = "";
-}
-
-
-var isEmpty = function(entry){
-      entry = getEntry();
-      var output = document.getElementById("content").value;
-      if ( output == '' ){
-                alert("Enter a message");
-      }
-       else {
-        guestMessages.printMessages();
-      }
-}
-
-
-
-</script> -->
 </head>
 <body>
 
       <div class="header">      
-            <h1>Victoria's Journal</h1>
-            <h3 class="titleDescription">So fresh and so clean</h3>
+            <h1>Francesca's Journal </h1>
+            <h3 class="titleDescription">So fresh and so clean </h3>
       </div> 
 
       <div id="entryForm">
       <div id="journal">
             <div class="title">
-                  <textarea id="title" size="50" rows="1" placeholder="Title"></textarea>
+                  <textarea id="title" rows="1" cols="63" placeholder="Title"></textarea>
             </div>
-            <input type="text" id="entryPhoto" name="Photo" placeholder="PhotoURL" size="50">
-            <textarea id="entryContent" cols="64" rows="3" placeholder="Say something about yourself"></textarea>
+            <br>
+            <div>
+                  <input type="text" id="entryPhoto" name="Photo" placeholder="PhotoURL" size="69">
+            </div>
+            <br>
+            <textarea id="entryContent" cols="63" rows="3" placeholder="Say something about yourself"></textarea>
 
             <button id="submit" onclick="addJournalEntry();">Submit</button>
       </div>     
       </div>
+      <h1 id="jTitle">Journal Entries</h1>
       <div id = "entries">
-            <h1>Journal Entries</h1>
             <ul>
               <div id = "comment-feed">
                 <li id = "first-entry">
@@ -80,53 +42,6 @@ var isEmpty = function(entry){
                 </li>
               </div>
             </ul>
-      </div> 
-    <!-- <div id = "journal">
-          <div class = "photo">
-                <img src = "http://placehold.it/140x100" id = "userImage"> -->
-                <!-- <textarea id = "URL" cols = "64" rows = "3" placeholder = "Add an image URL to elevate your journal post."></textarea> -->
-                <!-- <button id = "upload">Upload</button>
-          </div>
-          <div class = "comments">
-                <textarea id = "content" cols = "64" rows = "3" placeholder = "Say something about yourself."></textarea>
-                <button id = "submit" onclick = "isEmpty();clearDiv();">Submit</button>
-          </div>
-    </div>
-
-    <div id = "entries">
-          <h1>Journal Entries</h1>
-          <ul>
-            <div id = "comment-feed">
-              <li id = "first-entry">
-
-              </li>
-            </div>
-          </ul>
-    </div> -->
-
-    <!-- <div class="entireJournal">
-      <div class="title">      
-            <h1>Victoria's Journal</h1>
-            <h3 class="titleDescription">So fresh and so clean</h3>
       </div>
-      <div class="entry">
-            <h3><span>10/06/2023: </span>Spatulas</h3>
-            <img src="jImages/spatula.jpg" alt="spatula">
-            <p>Yesterday I went to the store and got some much needed spatulas! (What better way to say I love myself than to buy myself a spatula!)</p>
-      </div>
-      <div class="entry">            
-            <h3><span>10/06/2023: </span>Cookie Monster Cupcakes</h3>
-            <img src="jImages/cookieMon.jpg" alt="Cookie Monster Cupcakes Image">
-            <p>My favorite cartoon character is Cookie Monster, and my favorite dessert is cupcakes, so Cookie Monster cupcakes are the best of both worlds.</p>
-            <p>Did you know? Cookie Monster once said, "Sometimes me think what is love, and then me think love is what last cookie is for. Me give up the last cookie for you." I wonder if the same applies for cupcakes? (If so, I dont think I can ever love ANYONE!)"</p>
-      </div>
-     </div>  -->
-
 </body>
 </html>
-
-
-
-
-<!-- <h2><span>${dateString}:</span> ${title}</h2>
-<div class="entireJournal"><img src="${newEntryPhoto}">${newEntryContent}</div> -->

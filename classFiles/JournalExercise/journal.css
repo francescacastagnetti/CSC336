@@ -3,7 +3,6 @@ body{
   margin: 0 auto;
   background-color:#c9ffff;
   font-family: 'Montserrat', sans-serif;
-  /* color:#FFF; */
   overflow-x: hidden;
   top: 0;
   left: 0;
@@ -22,7 +21,7 @@ body{
     border-style: solid;
     border-color: white;
     border-width: 10px;
-    background-color: white;
+    background-color: #19a0a0;
     height: fit-content;
     position: relative;
     vertical-align: middle;
@@ -39,6 +38,7 @@ body{
     border-color: #19a0a0;
     border-width: 5px;
     border-radius: 1px;
+    color:#168989;
 
 }
 
@@ -51,8 +51,20 @@ body{
     padding: 5px;
     margin-top: 10px;
     overflow: hidden;
+    text-align: left;
+    color:#19a0a0;
+    margin-bottom: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+
 }
 
+
+
+#jTitle{
+    text-align: center;
+    color:#19a0a0;
+}
 
 .titleDescription {
     font-size: 14pt;
@@ -69,11 +81,12 @@ img {
     margin: 5px;
 }
 
-p{
+.pStyle{
     text-align: justify;
     overflow: hidden;
     font-weight: bold;
     font-size: 10pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #journal{
@@ -85,11 +98,9 @@ p{
     border:1px solid #ccc;
     border-radius:2px;
     margin-top: 100px;
-    /* top: 0; */
     left: 0;
     bottom: 0;
     right: 0;
-    /* margin:auto */
 }
 
 img{
@@ -135,6 +146,7 @@ textarea{
 #submit{
     position: relative;
     top: 15px;
+    left: 40%;
 
 }
 
