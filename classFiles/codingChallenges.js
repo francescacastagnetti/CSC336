@@ -16,6 +16,8 @@ TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1
 GOOD LUCK 😀
 */
 
+console.log("Coding Challenge #1 \n");
+
 let massMark = 78;
 let heightMark = 1.69;
 let massJohn = 92;
@@ -25,7 +27,6 @@ let BMIMark = massMark / heightMark ** 2;
 let BMIJohn = massJohn / (heightJohn * heightJohn);
 let markHigherBMI = BMIMark > BMIJohn
 
-console.log("Coding Challenge #1 \n");
 console.log("TEST DATA #1");
 console.log("Mark's BMI:", BMIMark, "\nJohn's BMI:", BMIJohn, "\nMark has a higher BMI than John:", markHigherBMI);
 
@@ -56,24 +57,17 @@ HINT: Use an if/else statement 😉
 GOOD LUCK 😀
 */
 
+console.log("Coding Challenge #2 \n");
+
 massMark = 78;
 heightMark = 1.69;
 massJohn = 92;
 heightJohn = 1.95;
 
-// const massMark = 95;
-// const heightMark = 1.88;
-// const massJohn = 85;
-// const heightJohn = 1.76;
-
-// const BMIMark = massMark / heightMark ** 2;
-// const BMIJohn = massJohn / (heightJohn * heightJohn);
-// console.log(BMIMark, BMIJohn);
 
 BMIMark = massMark / heightMark ** 2;
 BMIJohn = massJohn / (heightJohn * heightJohn);
 
-console.log("Coding Challenge #2 \n");
 console.log("TEST DATA #1");
 if (BMIMark > BMIJohn) {
 	console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
@@ -114,6 +108,7 @@ TEST DATA BONUS 2: Pandas score 97, 112 and 101. Koalas score 109, 95 and 106
 
 GOOD LUCK 😀
 */
+
 console.log("Coding Challenge #3 \n");
 
 console.log("TEST DATA");
@@ -144,11 +139,6 @@ let avgScore = function(scoreArray) {
   
   // BONUS 1
 console.log("TEST DATA BONUS #1");
-  // const scorePandas = (97 + 112 + 101) / 3;
-  // const scoreKoalas = (109 + 95 + 50) / 3;
-  // const scorePandas = avgScore(97, 112, 80);
-  // const scoreKoalas = avgScore(109, 95, 50);
-  
 
   let pandasScoreArray = [97, 112, 101];
   scorePandas = avgScore(pandasScoreArray);
@@ -203,13 +193,6 @@ GOOD LUCK 😀
 */
 
 console.log("Coding Challenge #4 \n");
-
-// const tip = 0;
-// if (bill <= 300 && bill >= 50) {
-// 	tip = bill * 0.15;
-// } else {
-// 	tip = bill * 0.2;
-// }
 
 console.log("TEST DATA #1");
 let bill = 275;
