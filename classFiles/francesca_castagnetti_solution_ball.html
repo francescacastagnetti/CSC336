@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <script>
+
+            function moveLeft() {
+                const circle = document.getElementById("circle");
+                const radius = circle.r.baseVal.value;
+                let changeX = - (radius * 0.5);
+                moveCircle(changeX,0);
+            }
+
+            function moveRight() {
+                const circle = document.getElementById("circle");
+                const radius = circle.r.baseVal.value;
+                let changeX = (radius * 0.5);
+                moveCircle(changeX,0);
+            }
+           
+            function moveUp() {
+                const circle = document.getElementById("circle");
+                const radius = circle.r.baseVal.value;
+                let changeY = -(radius * 0.5);
+                moveCircle(0,changeY);
+            }
+
+            function moveDown() {
+                const circle = document.getElementById("circle");
+                const radius = circle.r.baseVal.value;
+                let changeY = (radius * 0.5);
+                moveCircle(0,changeY);
+            }
+
+            function scaleUp() {
+                const circle = document.getElementById("circle");
+                const radius = circle.r.baseVal.value;
+                const newRadius = radius * 1.15; 
+                circle.r.baseVal.value = newRadius;
+            }
+
+            function scaleDown() {
+                const circle = document.getElementById("circle");
+                const radius = circle.r.baseVal.value;
+                const newRadius = radius * 0.85; 
+                circle.r.baseVal.value = newRadius;
+            }
+           
+            function moveCircle(changeX, changeY) {
+                const circle = document.getElementById("circle");
+                const radius = circle.r.baseVal.value;
+                const currentX = circle.cx.baseVal.value;
+                const currentY = circle.cy.baseVal.value;
+           
+                const newValueX = Math.min(Math.max(currentX + changeX, radius), window.innerWidth-(currentX - 2*radius));
+           
+                const newValueY = Math.min(Math.max(currentY + changeY, radius), window.innerHeight-(currentY - 2*radius));
+           
+                circle.setAttribute("cx", newValueX);
+                circle.setAttribute("cy", newValueY);
+               
+                console.log(newValueX, newValueY);
+            }
+        </script>
+    </head>
+    <body>
+
+        <h1>Animated Ball</h1>
+
+        <div>
+            <button onClick="moveLeft();">Move Left</button>
+            <br>
+            <button onClick="moveRight();">Move Right</button>
+            <br>
+            <button onClick="moveUp();">Move Up</button>
+            <br>
+            <button onClick="moveDown();">Move Down</button>
+        </div>
+
+
+
+        <div style="float:left">
+            <button onClick="scaleUp();">Scale Up</button>
+            <br>
+            <button onClick="scaleDown()">Scale Down</button>
+            <br>
+        </div>
+
+        
+
+
+        <div style="width:100%; height:100%;">
+            <svg width="100%" height="100%">
+                <circle id="circle" cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+   
+   
+    </body>
+</html>

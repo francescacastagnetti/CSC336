@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ball</title>
+        <meta charset = "utf-8">
+       
+
+    </head>
+    <body>
+<!-- HTML Content Structure -->
+
+<h1>Animating Ball Across The Screen</h1>
+<div style="float:left">
+	<button onClick="scaleUp();">Scale Up</button>
+	<br>
+	<button onClick="scaleDown();">Scale Down</button>
+</div>
+
+<div>
+	<button onClick="moveLeft();">Left</button>
+	<button onClick="moveRight();">Right</button>
+	<br>
+	<button onClick="moveUp();">Up</button>
+	<button onClick="moveDown();">Down</button>
+</div>
+
+
+<div style="width:100%; height:100%;">
+	<svg width="100%" height="100%">
+		<circle id="circle" cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+		Sorry, your browser does not support inline SVG.
+	</svg> 
+</div>
+
+<!-- END OF HTML Content Structure -->
+ 
+<!-- JAVASCRIPT -->
+            <script>
+
+                function moveLeft() {
+                    const circle = document.getElementById("circle"); 
+                    const radius = circle.r.baseVal.value;
+                    let changeX = - (radius * 0.5);
+                    moveCircle(changeX,0);
+                }
+        
+         
+                // function moveUp() {
+                //     const circle = document.getElementById("ball");
+                //     const radius = circle.r.baseVal.value; 
+                //     let changeY = -(radius * 0.5);
+                //     moveCircle(0,changeY);
+                // }
+        
+                function moveCircle(changeX, changeY) {
+                    const circle = document.getElementById("circle");
+                    const radius = 100/2;
+                    const currentX = circle.cx.baseVal.value;
+                    const currentY = circle.cy.baseVal.value;
+        
+                    const newValueX = Math.min(Math.max(currentX + changeX, radius), window.innerWidth-(currentX - 2*radius));
+        
+                    const newValueY = Math.min(Math.max(currentY + changeY, radius), window.innerHeight-(currentY - 2*radius));
+        
+                    circle.setAttribute("cx", newValueX);
+                    circle.setAttribute("cy", newValueY);
+          
+                    console.log(newValueX, newValueY);
+                }
+         
+                </script>
+        </body>
+</html>

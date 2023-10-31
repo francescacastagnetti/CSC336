@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dog Study</title>
+        <meta charset = "utf-8">
+        <script>
+            let juliaArr = [3, 5, 2, 12, 7];
+            let kateArr = [4, 1, 15, 8, 3];
+
+            let juliaArr2 = [9, 16, 6, 8, 3];
+            let kateArr2 = [10, 5, 6, 1, 4];
+
+            function checkDogs(jArr, kArr){
+                let dogsJuliaClean = [...jArr]; // create a shallow copy
+                dogsJuliaClean.pop(); // remove last element
+                dogsJuliaClean.pop(); // remove last element
+                dogsJuliaClean.shift(); // remove first element
+                let allDogs = kArr.concat(dogsJuliaClean);
+
+                let ageSum = 0
+                for(i = 0; i < allDogs.length; i++){
+                    if(allDogs[i] >= 3){
+                        console.log("Dog", (i+1), "is an adult, and is", allDogs[i], "years old.")
+                    }else{
+                        console.log("Dog", (i+1), "is an puppy, and is", allDogs[i], "years old.")
+                    }
+                    ageSum += allDogs[i];
+                }
+                let max = Math.max(...allDogs);
+                let min = Math.min(...allDogs);
+                let avg = ageSum/allDogs.length; 
+    
+                console.log("The oldest dog's age is", max, "!");
+                console.log("The youngest dog's age is", min, "!");
+                console.log("The average age across all the dogs is", avg, "! \n");
+
+            }
+
+            console.log("TEST DATA #1");
+            checkDogs(juliaArr, kateArr);
+            console.log("TEST DATA #2");
+            checkDogs(juliaArr2, kateArr2);
+
+        </script>
+        
+    
+    </head>
+    <body>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BMI Calculator</title>
+        <meta charset = "utf-8">
+        <script>
+            function calcBMI(){
+                BMIMark = document.getElementById("M1").value / document.getElementById("H1").value ** 2;
+                BMIJohn = document.getElementById("M2").value / document.getElementById("H2").value ** 2;
+                markHigherBMI = (BMIMark > BMIJohn);
+                if (markHigherBMI) {
+	                BMIs.innerText = (`Mark's BMI (${BMIMark}) is greater than the other John's (${BMIJohn})!`);
+                 } else {
+	                BMIs.innerText = (`The Mark's BMI (${BMIMark}) is not greater than John's (${BMIJohn})!`);
+                 }
+            }  
+        </script>
+
+    </head>
+    <body>
+
+            <h1>BMI Calculator</h1>
+            <textarea id="M1" cols="66" rows="3" placeholder="Enter Mark's mass (in kgs)"></textarea>
+            <textarea id="H1" cols="66" rows="3" placeholder="Enter Mark's height (in meters)"></textarea>
+
+            <textarea id="M2" cols="66" rows="3" placeholder="Enter John's mass (in kgs)"></textarea>
+            <textarea id="H2" cols="66" rows="3" placeholder="Enter John's height (in meters)"></textarea>
+
+
+            <div id="submitDiv">
+
+                <button id="submit" onclick="calcBMI();">Submit</button>
+
+            </div>
+
+            <p id="BMIs"></p>
+
+
+        </body>
+</html>
